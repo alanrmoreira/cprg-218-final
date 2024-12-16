@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto";
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.top-fleet-title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.top-fleet-content {
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.main-fleet-img {
+  max-width: 45%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 1rem;
+}
+
+.top-fleet-text {
+  margin: 0 auto;
+  max-width: 45%;
+}
+
+.top-fleet {
+  display: none;
+}
+
+summary {
+  padding: 1rem;
+}
+
+.active-exp {
+  display: block;
+}
+
+.active-btn {
+  background-color: #ffd700;
+  color: black;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+#menu {
+  width: 100%;
+  background-color: #efbf04;
+}
+
+#btn-group {
+  padding: 1rem;
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+button {
+  width: 8rem;
+  height: 2rem;
+  background-color: #efbf04;
+  border: none;
+  float: left;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ffd700;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  height: 10rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+p#footer-logo {
+  color: white;
+  font-size: 3rem;
+  font-family: "Orbitron";
+}
+
+#hamburger {
+  display: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+#form-frame {
+  min-width: 20rem;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.form-item {
+  margin-bottom: 1rem;
+  width: 95%;
+  height: 2rem;
+}
+
+.form-info-list {
+  background-color: transparent !important;
+}
+.form-info-list li {
+  float: left !important;
+}
+
+@media screen and (max-width: 671px) {
+  .main-fleet-img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .top-fleet-text {
+    margin: 0 auto;
+    max-width: 95%;
+  }
+
+  #btn-group {
+    padding: 1rem;
+    max-width: 200px;
+    height: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+    color: #000;
+    float: right;
+    font-size: 1.5rem;
+    width: 2rem;
+    rotate: 90deg;
+    right: 1rem;
+    position: absolute;
+    background-color: transparent;
+  }
+
+  #menu {
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 2100px) {
+  #menu {
+    width: 100%;
+    align-items: center;
+    background-color: #efbf04;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

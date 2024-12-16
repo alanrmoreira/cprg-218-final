@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tomorrow&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Top Fleet - contact</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Top Fleet</h1>
+    </header>
+
+    <section id="menu" class="closed">
+      <div id="btn-group">
+        <button id="btn-home" class="btn">Home</button>
+        <button id="btn-about-us" class="btn">About us</button>
+        <button id="btn-contact" class="btn active-btn">Contact</button>
+      </div>
+      <button id="hamburger" c onclick="handleHamburgerMenu()">|||</button>
+    </section>
+
+    <main>
+      <section id="about-me" class="top-fleet active-exp">
+        <main class="top-fleet-content">
+          <img
+            src="./img/pexels-mizunokozuki-13801589.jpg"
+            alt="Fleet"
+            class="main-fleet-img"
+          />
+
+          <article class="top-fleet-text">
+            <h1 class="top-fleet-title">We’re Here to Help!</h1>
+            <p>
+              At Top Fleet, we prioritize your satisfaction and convenience. If
+              you have any questions, need assistance, or wish to provide
+              feedback, don’t hesitate to reach out.
+            </p>
+            <ul>
+              <li>
+                <strong>Service:</strong> 1-800-TOP-FLEET
+                (1-800-867-3538)Available 24/7 to assist you.
+              </li>
+              <li>Expect a response within 24 hours.</li>
+              <li>
+                <strong>Visit Us:</strong> 123 Main Street, Suite 456, YourCity,
+                YourState, ZIP CodeOpen Monday to Friday: 8 AM - 6 PM, Saturday:
+                9 AM - 4 PM.
+              </li>
+            </ul>
+            <p>
+              Or simply fill out our Contact Form and we’ll get back to you
+              shortly.
+            </p>
+
+            <form action="" method="post" id="contact-form">
+              <input
+                type="text"
+                id="name"
+                name="from_name"
+                placeholder="Name"
+                class="form-item"
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="from_phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="000-000-0000"
+                class="form-item"
+              />
+              <input
+                type="email"
+                id="email"
+                name="from_email"
+                placeholder="E-mail"
+                class="form-item"
+              />
+              <textarea
+                id="message"
+                name="from_message"
+                placeholder="Message"
+                class="form-item"
+              ></textarea>
+              
+              <input type="submit" class="form-item"/>
+            </form>
+            <br />
+          </article>
+        </main>
+      </section>
+    </main>
+
+    <footer>
+      <p id="footer-logo">TF</p>
+    </footer>
+    <script src="./script.js"></script>
+    
+  </body>
+</html>
